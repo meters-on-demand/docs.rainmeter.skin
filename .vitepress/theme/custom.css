@@ -1,0 +1,26 @@
+:root {
+  --vp-c-brand-1: #2a6d9b;
+  --vp-c-brand-2: #155884;
+  --vp-c-brand-3: #09466e;
+  /* --vp-button-brand-bg: var(--vp-c-brand-1); */
+  /* --vp-button-brand-hover-bg: var(--vp-c-brand-2); */
+}
+
+.dark {
+  --vp-c-brand-1: #60a529;
+  --vp-c-brand-2: #3b6e14;
+  --vp-c-brand-3: #264b09;
+  --vp-c-brand-soft: #627752;
+}
+
+.installer {
+  --outline: #3b6e14;
+  --fill: #60a529;
+  --droplet: #f0f0ff;
+}
+
+.box {
+  --outline: #2a6d9b;
+  --fill: #f0f0ff;
+  --droplet: #e09028;
+}
