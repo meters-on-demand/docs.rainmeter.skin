@@ -45,7 +45,7 @@ export default defineConfig({
         text: "API",
         items: [
           { text: "Consuming the API", link: "/api/" },
-          { text: "Schema", link: "/api/schema" },
+          { text: "Skin schema", link: "/api/schema" },
         ],
       },
     ],
