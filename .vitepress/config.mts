@@ -51,10 +51,19 @@ export default defineConfig({
       },
     ],
 
+    footer: {
+      message: 'Thank you to creepertron95, jeff, keifufu and modkavartini',
+      // copyright: 'Copyright © 2023 Meters on Demand'
+      copyright: 'Released under the <a href="https://github.com/meters-on-demand/docs.rainmeter.skin/blob/main/LICENSE">MIT License</a>'
+    },
+
     socialLinks: [
       { icon: "github", link: "https://github.com/meters-on-demand" },
     ],
   },
+
+  // We do a little bit of trolling
+  // appearance: false,
 
   head: [
     [
