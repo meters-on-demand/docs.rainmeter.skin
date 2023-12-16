@@ -20,13 +20,14 @@ hero:
       link: /api/
 
 features:
-  - title: Package
-    details: How to take advantage of <code>package</code> to automatically package skins
+  - title: Create a new skin
+    details: Init creates a new skin from a template, with a variables file and mond.inc included!
+    link: /cli/init
+  - title: Package skins automatically
+    details: Easily create .rmskin packages without having to fill in and click through the skin packager!
     link: /cli/package
-  - title: Command help
-    details: List of all MonD commands
-    link: /cli/
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Do it yourself
+    details: Consume the API and build your own interface for mond!
+    link: /api
 ---
 
