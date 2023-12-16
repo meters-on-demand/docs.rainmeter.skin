@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Meters on Demand",
   description: "Meters on Demand, the Rainmeter package manager",
-  srcDir: "docs",
+  srcDir: "docs",  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -22,7 +22,7 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Documentation", link: "/cli/" },
+      { text: "Documentation", link: "/cli/usage" },
       { text: "API", link: "/api/" },
     ],
 
@@ -37,8 +37,9 @@ export default defineConfig({
       {
         text: "Skin developers",
         items: [
-          { text: "Adding your skin", link: "/adding-skins" },
+          { text: "Publishing your skin", link: "/adding-skins" },
           { text: "Package", link: "/cli/package" },
+          { text: "Init", link: "/cli/init" },
         ],
       },
       {

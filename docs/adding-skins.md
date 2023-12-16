@@ -1,22 +1,22 @@
 ---
 ---
 
-# Adding your skin to Meters on Demand
+# Publishing your skin
 
 How to add your skin to the `mond` Rainmeter skin repository
 
-# Requirements:
+## Requirements:
 
-### Your skin must be on GitHub
+### Your skin must have a repository on GitHub
 
  * See [How to git](/how-to-git) and upload your skin to GitHub. You can also read GitHubs own [repository instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
 
-### The repository must have the right topic for `mond` to find it
+### The repository must have the right topic for mond to find it
 
  * #rainmeter, #rainmeter-skin and #rmskin are valid topics 
  * See [Classifying your repository with topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics)
 
-### The GitHub repository must have a release with an .rmskin package in it
+### The repository must have a release with an .rmskin package in it
 
  * See [Managing releases in a repository](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) to learn how to make and manage releases.
  * You can use the [package command](/cli/package) to automatically create an .rmskin package for your skin.

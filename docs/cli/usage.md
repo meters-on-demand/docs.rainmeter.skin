@@ -40,7 +40,7 @@ help [-Command]
 # shows this help
 ```
 
-# Examples
+## Examples
 
 Installing a skin
 

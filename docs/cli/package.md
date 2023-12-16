@@ -1,4 +1,5 @@
 ---
+title: Package
 ---
 
 # Package command
@@ -23,22 +24,23 @@ There are several ways of running mond package.
 
 - Run `mond package` in your skins root directory (#ROOTCONFIGPATH#)
 - Run `mond package <skin_name>`
+- Run `mond package -Skin <skin_name>`
 
 Package will scan every .inc and .ini file in your skin to see which plugins are used. The detected plugins are added to the package automatically.
 
-If your skin has a mond.inc configuration file, package will use the information in it. If your skin doesn't have a mond.inc file or you want to override it, you can provide the information through command line parameters.
-
 ## Using mond.inc
 
-Place or create mond.inc in the root of your skin `#ROOTCONFIGPATH#` or in the @Resources `#@#` folder of your skin. 
+If your skin has a mond.inc configuration file, package will use the information in it.
 
-Mond.inc is a configuration file that can also be used to customise your skins information in the Meters on Demand database. See [Adding your skin](/adding-skins) for more information about skin publishing.
+The mond.inc configuration file needs to be either in the root of your skin `#ROOTCONFIGPATH#` or in the @Resources `#@#` folder of your skin. 
 
-::: info
+Mond.inc can also be used to customise your skins information in the Meters on Demand database. See [Adding your skin](/adding-skins) for more information about skin publishing.
+
+<div class="info custom-block" style="padding-top: 8px">
 You do not need to publish your skin to use the package command.
-:::
+</div>
 
-Here's an example of a mond.inc file for packaging:
+## Example mond.inc for packaging
 
 ```ini
 [mond]
@@ -51,9 +53,10 @@ LoadType=Layout
 Load=Mondtholomew
 ```
 
-::: warning
-You may use the variable `#@#` in HeaderImage and in VariableFiles. You may **NOT** use any other Rainmeter variables. Mond is a separate tool from Rainmeter and it cannot read your skins variables.
-:::
+<div class="warning custom-block" style="padding-top: 8px">
+<p class="custom-block-title">Notice</p>
+You may use the variable <code>#@#</code> in HeaderImage and in VariableFiles. You may <strong>NOT</strong> use any other Rainmeter variables. Mond is a separate tool from Rainmeter and it cannot read your skins variables.
+</div>
 
 ## Using command line parameters
 
@@ -62,12 +65,12 @@ You can override the defaults and the configuration file with command line param
 Example command supplying all of the information with parameters:
 
 ```shell
-mond package -Config Mondtholomew -Author Reisir -PackageVersion v1.3.0 -HeaderImage 'Mondtholomew\@Resources\mondtholomew.bmp' -VariableFiles 'Mondtholomew\@Resources\Variables.inc' -LoadType Layout -Load Mondtholomew
+mond package -Config Mondtholomew -Author Reisir -PackageVersion v1.3.0 -HeaderImage "Mondtholomew\@Resources\mondtholomew.bmp" -VariableFiles "Mondtholomew\@Resources\Variables.inc" -LoadType Layout -Load Mondtholomew -OutPath ".\Mondtholomew.rmskin"
 ```
 
 ## All package options
 
-Option is the name in mond.inc, if applicable. Override is the command line parameter. The listed parameter names should be considered unstable as they may change at any point. Using mond.inc is recommended.
+Option is the name in mond.inc, if applicable. Override is the command line parameter. The listed parameter names should be considered unstable as they may change at any point.
 
 | Option           | Override              | Description                                                                                                                                                                                                                                                         |
 | ---------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

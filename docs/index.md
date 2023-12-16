@@ -2,6 +2,8 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title: Home
+
 hero:
   name: "Meters on Demand"
   text: 
@@ -12,7 +14,7 @@ hero:
       link: /cli/
     - theme: alt
       text: Documentation
-      link: /cli/
+      link: /cli/usage
     - theme: alt
       text: API
       link: /api/
