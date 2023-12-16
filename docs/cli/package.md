@@ -92,5 +92,4 @@ Option is the name in mond.inc, if applicable. Override is the command line para
 
 By using `mond package` you agree to bundling in the following image into your skins @Resources folder
 
-[![image](/disclaimer.png)](https://www.newgrounds.com/art/view/whygena-draws/just-a-taste)
-
+[![image](/disclaimer.png "two cartoon rats making out ©whygena")](https://www.newgrounds.com/art/view/whygena-draws/just-a-taste)
