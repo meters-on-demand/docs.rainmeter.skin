@@ -22,16 +22,30 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Documentation", link: "/cli" },
-      { text: "API", link: "/api" },
+      { text: "Documentation", link: "/cli/" },
+      { text: "API", link: "/api/" },
     ],
 
     sidebar: [
       {
-        text: "Examples",
+        text: "Getting started",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Installing", link: "/cli/" },
+          { text: "Usage", link: "/cli/usage" },
+        ],
+      },
+      {
+        text: "Skin developers",
+        items: [
+          { text: "Adding your skin", link: "/adding-skins" },
+          { text: "Package", link: "/cli/package" },
+        ],
+      },
+      {
+        text: "API",
+        items: [
+          { text: "Consuming the API", link: "/api/" },
+          { text: "Schema", link: "/api/schema" },
         ],
       },
     ],

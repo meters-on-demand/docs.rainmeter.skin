@@ -9,21 +9,21 @@ hero:
   actions:
     - theme: brand
       text: Getting started
-      link: /cli
+      link: /cli/
     - theme: alt
       text: Documentation
-      link: /cli/commands
+      link: /cli/
     - theme: alt
       text: API
-      link: /api
+      link: /api/
 
 features:
   - title: Package
     details: How to take advantage of <code>package</code> to automatically package skins
-    link: /cli/commands/package
+    link: /cli/package
   - title: Command help
     details: List of all MonD commands
-    link: /cli/commands
+    link: /cli/
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
