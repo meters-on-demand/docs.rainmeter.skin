@@ -19,7 +19,7 @@ How to add your skin to the Meters on Demand database.
 
 ### The repository must have a release with an .rmskin package in it
 
- * You can use the [package command](/cli/package) to automatically create an .rmskin package for your skin.
+ * You can use the [package command](/commands/package) to automatically create an .rmskin package for your skin.
 
 ## Adding the #rainmeter-skin topic
 
