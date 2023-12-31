@@ -1,27 +1,31 @@
 ---
+order: 9001
 ---
 
-# Sourcing
+# PowerShell sourcing
 
-Sourcing Meters on Demand can be useful if you want to use its internal functions and integrate them in your own script or skin.
+Sourcing Meters on Demand in your script can be useful if you want to use its internal functions and integrate them in your own tool or skin but it has some drawbacks too.
 
 ## What is sourcing
 
-[Scope and dot sourcing](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-7.4#script-scope-and-dot-sourcing) describes the basics of sourcing PowerShell scripts.
+Microsofts official [Scope and dot sourcing](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-7.4#script-scope-and-dot-sourcing) article describes the basics of sourcing PowerShell scripts.
 
 When you source a script (with the `.` operator), the script is executed and all of its variables and functions are loaded into the current scope. So, by sourcing you get access to monds internal functions and the `$MetersOnDemand` object.
 
 ```ps1
+# Sourcing MetersOnDemand
 . "$($RmApi.Variable('SKINSPATH'))#Mond\MetersOnDemand.ps1"
 ```
 
 ## Watch out!
 
-By sourcing the `MetersOnDemand.ps1` script file, all of the functions and a variable called `$MeterOnDemand` are added to the current scope. While you can source the script inside your own functions, it's recommended you source it at the root of your script. Just don't override `$MetersOnDemand` or any of the functions. PowerShell will let you do it without warning, so be careful.
+By sourcing the `MetersOnDemand.ps1` script file, all of the functions and a variable called `$MeterOnDemand` are added to the current scope. While you can source the script inside your own functions, it's recommended you source it at the root of your script, to let all of the functions use the cache without a ton of file reads.
 
-Most of the internal functions use values from the `$MetersOnDemand` object. When the script is first ran (so when it's sourced), the `$MetersOnDemand.Cache` object is populated with values from the users cache.json file. The cache file is created when mond is installed.
+Most of the functions use values from the `$MetersOnDemand` object. When the script is first ran (so when it's sourced), the object is created and `$MetersOnDemand.Cache` is populated with values from the users cache.json file. The cache file is created when mond is installed and is required for mond to function.
 
-Functions declared by `MetersOnDemand.ps1` and included modules:
+PowerShell will let you override `$MetersOnDemand` and any of the functions without warning, so be careful.
+
+Functions declared by `MetersOnDemand.ps1` (you can't use any of these names sorry):
 
 | Name                    | Signature                                                    |
 | ----------------------- | ------------------------------------------------------------ |
@@ -65,6 +69,10 @@ Uhh now that I look at it, the function signatures are all over the place
 
 ## Recommendation
 
-Before the function signatures are more coherent, you can and should call `mond` like a user would.
+Before the function signatures are made more coherent, you can and should call `mond` like a user would. eg. `mond install reisir/jiffy`
 
 You might want to use sourcing for the Search function to get an array of skin objects to work with.
+
+## What you can do about it
+
+Teach me to use PowerShell modules plz, I'm @reisir on discord 

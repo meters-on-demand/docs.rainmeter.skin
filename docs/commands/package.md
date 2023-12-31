@@ -1,5 +1,6 @@
 ---
 title: Package
+order: 3
 ---
 
 # Package command
@@ -10,7 +11,7 @@ The package command automatically generates a .rmskin package for distributing R
 mond package [-Skin] <skin_name>
 ```
 
-## Pre-requisites
+## Requirements:
 
 * Read the Rainmeter [distributing skins](https://docs.rainmeter.net/manual/distributing-skins/) guide. Package essentially replicates the skin packagers functions. 
 * Install [Meters on Demand](https://github.com/meters-on-demand/cli/releases/latest/) if you haven't already
@@ -30,11 +31,11 @@ Package will scan every .inc and .ini file in your skin to see which plugins are
 
 ## Using mond.inc
 
-If your skin has a mond.inc configuration file, package will use the information in it.
+If your skin has a mond.inc configuration file, package will use the information in it. If you created your skin using `mond init`, it already has the configuration file. Nice!
 
-The mond.inc configuration file needs to be either in the root of your skin `#ROOTCONFIGPATH#` or in the @Resources `#@#` folder of your skin. 
+The mond.inc configuration file needs to be either in `#ROOTCONFIGPATH#` or in the `@Resources` folder of your skin. 
 
-Mond.inc can also be used to customise your skins information in the Meters on Demand database. See [Adding your skin](/adding-skins) for more information about skin publishing.
+Mond.inc can also be used to customise your skins information in the Meters on Demand database. See [Publishing skins](/guides/publishing) for more information about skin publishing and [Customizing data](/guides/customizing) for more information about using mond.inc to customize your skins information [in the database](https://youtu.be/XzWcameJDow).
 
 <div class="info custom-block" style="padding-top: 8px">
 You do not need to publish your skin to use the package command.

@@ -1,7 +1,5 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 title: Home
 
 hero:
@@ -11,23 +9,25 @@ hero:
   actions:
     - theme: brand
       text: Getting started
-      link: /cli/
+      link: /cli/installing
     - theme: alt
       text: Documentation
       link: /cli/usage
     - theme: alt
       text: API
-      link: /api/
+      link: /api/consuming-the-api
 
 features:
+  - title: Install a skin
+    details: Install a skin from the Meters on Demand database!
+    link: /commands/install
   - title: Create a new skin
     details: Init creates a new skin from a template, with a variables file and mond.inc included!
-    link: /cli/init
+    link: /commands/init
   - title: Package skins automatically
     details: Easily create .rmskin packages without having to fill in and click through the skin packager!
-    link: /cli/package
+    link: /commands/package
   - title: Do it yourself
     details: Consume the API and build your own interface for mond!
-    link: /api
+    link: /api/consuming-the-api
 ---
-

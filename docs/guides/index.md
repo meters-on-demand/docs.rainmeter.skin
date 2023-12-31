@@ -1,10 +1,10 @@
 ---
-title: CLI
-order: 1
+title: Guides
+order: 4
 ---
 
 <script setup>
 import { useRouter } from 'vitepress'
 const router = useRouter()
-router.go(`/cli/installing`)
+router.go(`/guides/creating`)
 </script>

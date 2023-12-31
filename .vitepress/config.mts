@@ -1,13 +1,13 @@
 import { defineConfig } from "vitepress";
+import { generateSidebar } from "vitepress-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Meters on Demand",
   description: "Meters on Demand, the Rainmeter package manager",
   srcDir: "docs",
+  cleanUrls: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-
     search: {
       provider: "local",
     },
@@ -22,35 +22,18 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Documentation", link: "/cli/usage" },
-      { text: "API", link: "/api/" },
+      { text: "Documentation", link: "/cli/installing" },
+      { text: "API", link: "/api/consuming-the-api" },
     ],
 
-    sidebar: [
-      {
-        text: "Getting started",
-        items: [
-          { text: "Installing", link: "/cli/" },
-          { text: "Usage", link: "/cli/usage" },
-        ],
-      },
-      {
-        text: "Skin developers",
-        items: [
-          { text: "Publishing your skin", link: "/adding-skins" },
-          { text: "Package", link: "/cli/package" },
-          { text: "Init", link: "/cli/init" },
-          { text: "Sourcing", link: "/cli/sourcing" },
-        ],
-      },
-      {
-        text: "API",
-        items: [
-          { text: "Consuming the API", link: "/api/" },
-          { text: "Skin schema", link: "/api/schema" },
-        ],
-      },
-    ],
+    sidebar: generateSidebar({
+      documentRootPath: "docs",
+      useTitleFromFileHeading: true,
+      useTitleFromFrontmatter: true,
+      useFolderTitleFromIndexFile: true,
+      useFolderLinkFromIndexFile: false,
+      sortMenusByFrontmatterOrder: true,
+    }),
 
     footer: {
       message: "Thank you to creepertron95, jeff, keifufu and modkavartini",
@@ -62,6 +45,7 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/meters-on-demand" },
     ],
+    
   },
 
   // We do a little bit of trolling

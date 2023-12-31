@@ -1,4 +1,6 @@
 ---
+title: Usage
+order: 1
 ---
 
 # Usage
@@ -68,5 +70,5 @@ mond package Autocomb
 
 <div class="tip custom-block" style="padding-top: 8px">
 <p class="custom-block-title">About Package</p>
-Package is a utility command for skin developers. It has a lot of options, too many to fit on this list. If you're interested in automatically packaging skins, check out the <a href="/cli/package">package guide</a>.
+Package is a utility command for skin developers. It has a lot of options, too many to fit on this list. If you're interested in automatically packaging skins, check out the <a href="/commands/package">package guide</a>.
 </div>

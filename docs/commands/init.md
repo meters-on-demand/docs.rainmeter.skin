@@ -1,5 +1,6 @@
 ---
 title: Init
+order: 2
 ---
 
 # Init command
