@@ -24,9 +24,14 @@ The lines marked with `;` are not required, they are comments that explain what 
 ; The name you want to be credited as.
 ; If blank, GitHub username will be used.
 Author=Reisir
+; Optional author profile picture. Should be square and not massive.
+ProfilePicture=https://avatars.githubusercontent.com/u/93496808
 ; The description of your skin.
 ; If blank, the GitHub repositorys description will be used.
 Description=Mond but it work
+; Optional image preview of the skin
+PreviewImage=https://repository-images.githubusercontent.com/523792040/c634e70f-884a-4412-863a-d66cd4e2f80f
+
 ```
 
 ## GitHub webhook
