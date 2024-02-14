@@ -14,11 +14,11 @@ install [-Skin] <full_name> [-Force]
 list
 # lists installed skins
 
+update
+# updates the skins list
+
 search [-Query] <keyword> [-Property <property>]
 # searches the skin list
-
-update [-Force]
-# updates the skins list
 
 upgrade [-Skin] <full_name> [-Force]
 # upgrades the specified skin
@@ -34,6 +34,9 @@ init [-Skin] <skin_name>
 
 package [[-Skin] <rootconfig>] [...]
 # Creates an .rmskin package of the specified skin.
+
+bang [[-Bang] <bangs>] [-Start] [-Stop] [-NoStart]
+# Executes bangs through $RmApi (if available) or by commanding the executable directly
 
 version
 # prints the MonD version
